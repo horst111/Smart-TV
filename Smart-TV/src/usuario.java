@@ -1,6 +1,5 @@
 public class usuario {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
     
         SmartTV smartTV = new SmartTV();
 
@@ -10,6 +9,23 @@ public class usuario {
 
         smartTV.ligar ();
         System.out.println("Mudança de status -> Tv ligada? " + smartTV.ligada);
+
+        smartTV.desligar();
+        System.out.println("Mudança de status -> Tv ligada? " + smartTV.ligada);
+
+        smartTV.aumentarVolume();
+        smartTV.diminuirVolume();
+        smartTV.aumentarVolume();
+        System.out.println("Volume atual:" + smartTV.volume);
+
+        smartTV.aumentarCanal();
+        smartTV.diminuirCanal();
+        smartTV.aumentarCanal();
+        System.out.println("Canal Atual: " + smartTV.canal);
+
+        smartTV.selecionarCanal(11);
+        
+        System.out.println("Canal Atual: " + smartTV.canal);
 
     }
 
